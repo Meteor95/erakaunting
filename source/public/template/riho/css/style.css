@@ -32421,6 +32421,25 @@ footer .license-list h6 {
 /**=====================
     3.29 Login CSS Start
 ==========================**/
+.login-card-gambar {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px 12px;
+}
+
+.login-card-gambar h2, 
+.login-card-gambar h6 {
+  text-align: center;
+}
+.bg-center {
+  display: block; 
+  max-width: 100%; 
+}
+
 .login-card {
   min-height: 100vh;
   display: -webkit-box;
@@ -32433,7 +32452,7 @@ footer .license-list h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  background: url("../images/login/login_bg.jpg");
+  background: url("../images/login/login_bg.png");
   background-position: center;
   padding: 30px 12px;
 }
@@ -32455,6 +32474,7 @@ footer .license-list h6 {
   vertical-align: bottom;
 }
 .login-card .login-main {
+  max-width: 500px;
   padding: 40px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 37px rgba(8, 21, 66, 0.05);
