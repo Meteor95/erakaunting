@@ -15,7 +15,7 @@
 
 <body>
     @yield('main_content')
-    @include('paneladmin.template.footer_panel_admin')
+    @include('paneladmin.template.footer_panel_admin',['is_admin' => $data['is_admin'] ?? false])
     @stack('scripts')
     @stack('last-scripts')
 </body>
