@@ -1,0 +1,15 @@
+@import './style.css';
+@import './font-awesome.css';
+@import './color-1.css';
+@import './responsive.css';
+@import './vendors/bootstrap.css';
+@import './vendors/icofont.css';
+@import './vendors/themify.css';
+@import './vendors/flag-icon.css';
+@import './vendors/feather-icon.css';
+@import './vendors/slick.css';
+@import './vendors/slick-theme.css';
+@import './vendors/scrollbar.css';
+@import './vendors/animate.css';
+@import './vendors/echart.css';
+@import './vendors/date-picker.css';

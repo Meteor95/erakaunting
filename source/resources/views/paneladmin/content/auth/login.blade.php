@@ -31,7 +31,7 @@
                 <div class="form-group mb-0">
                     <button class="btn btn-primary btn-block w-100" type="submit">Masuk</button>
                 </div>
-                <p class="mt-4 mb-0 text-center">Belum Punya Akun?<a class="ms-2" href="sign-up.html">Buat Akun</a></p>
+                <p class="mt-4 mb-0 text-center">Belum Punya Akun?<a class="ms-2" href="javascript:void(0)">Buat Akun</a></p>
             </form>
             </div>
         </div>
@@ -41,5 +41,5 @@
 </div>
 @endsection
 @push('scripts')
-
+<script src="{{asset('mofi/assets/js/system/login.js')}}"></script>
 @endpush
