@@ -1,13 +1,4 @@
-/*! -----------------------------------------------------------------------------------
-
-    Template Name: Riho Admin
-    Template URI: https://admin.pixelstrap.net/riho/template/
-    Description: This is Admin theme
-    Author: Pixelstrap
-    Author URI: https://themeforest.net/user/pixelstrap
-
------------------------------------------------------------------------------------
-
+/*!
     1.Base css
         1.1 Reset CSS
         1.2 Typography CSS
@@ -3559,7 +3550,7 @@ table tbody .border-bottom-warning td {
 
 .balance-box {
   text-align: center;
-  background-image: url(../images/dashboard/bg-balance.png);
+  /*background-image: url('/template/riho/images/dashboard/bg-balance.png');*/
   background-position: right;
   background-size: cover;
 }

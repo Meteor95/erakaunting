@@ -196,7 +196,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
   background-image: linear-gradient(#fff, #fff);
   border-radius: 0.2em;
   zoom: 1;
-  *display: inline;
+  display: inline;
   margin-top: 10px;
 }
 .introjs-button:hover {

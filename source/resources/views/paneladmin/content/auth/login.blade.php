@@ -15,24 +15,28 @@
             <div><a class="logo text-start" href="{{ url('') }}"> <img style="max-width:500px" class="img-fluid for-dark" src="{{ asset('template/riho/images/login/logo_aciraba.png') }}" alt="looginpage"><img style="max-width:500px" class="img-fluid for-light" src="{{ asset('template/riho/images/login/logo_aciraba.png') }}" alt="looginpage"></a></div>
             <div class="login-main"> 
             <div class="theme-form">
-                <h4>Masukan Kredensial ID Kamu</h4>
-                <p>Masukan surel dan katasandi untuk melanjutkan mengelola keuangan bisnis anda</p>
+                <h4>{{ __('auth.title_login')}}</h4>
+                <p>{{ __('auth.sub_title_login')}}</p>
                 <div class="form-group">
                 <label class="col-form-label">Surel atau Nama Pengguna</label>
-                <input class="form-control" type="text" name="username" required="" placeholder="administrator@erayadigital.com">
+                <input class="form-control" type="text" id="username" required="" placeholder="administrator@erayadigital.com" value="administrator@erayadigital.com">
                 </div>
                 <div class="form-group">
                 <label class="col-form-label">Kata Sandi</label>
                 <div class="form-input position-relative">
-                    <input class="form-control" type="password" name="password" required="" placeholder="*********">
-                    <div class="show-hide"><span class="show"></span></div>
+                    <input class="form-control" type="password" id="password" required="" placeholder="*********" value="password">
+                    <div style="cursor:pointer" id="show-hide" class="show-hide"><i class="fas fa-eye-slash"></i></div>
                 </div>
                 </div>
                 <div class="form-group mb-0">
-                    <button class="btn btn-primary btn-block w-100" type="submit">Masuk</button>
+                    <button class="btn btn-primary btn-block w-100" type="button" id="loginProcessAct"><i class="fa-solid fa-person-to-door"></i> Masuk Ke Panel Admin</button>
                 </div>
-                <p class="mt-4 mb-0 text-center">Belum Punya Akun?<a class="ms-2" href="javascript:void(0)">Buat Akun</a></p>
-            </form>
+                <p class="mt-4 mb-0 text-center">Belum Punya Akun?<a class="ms-2" href="javascript:void(0)">Buat Akun</a>
+                <br>
+                Visitor ID : <span id="visitor_id"></span>
+                <br>
+                App Version : <span id="app_version">{{ env('APP_VERSION')}}</span>
+                </p>
             </div>
         </div>
         </div>
@@ -41,5 +45,5 @@
 </div>
 @endsection
 @push('scripts')
-<script src="{{asset('mofi/assets/js/system/login.js')}}"></script>
+    @vite('resources/eds/js/auth/app_auth.js')
 @endpush
