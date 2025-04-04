@@ -214,9 +214,9 @@
   }
 
   // toggle sidebar
-  $nav = $(".sidebar-wrapper");
-  $header = $(".page-header");
-  $toggle_nav_top = $(".toggle-sidebar");
+  let $nav = $(".sidebar-wrapper");
+  let $header = $(".page-header");
+  let $toggle_nav_top = $(".toggle-sidebar");
   $toggle_nav_top.click(function () {
     $nav.toggleClass("close_icon");
     $header.toggleClass("close_icon");
@@ -247,7 +247,7 @@
     $(this).remove();
   });
 
-  $body_part_side = $(".body-part");
+  let $body_part_side = $(".body-part");
   $body_part_side.click(function () {
     $toggle_nav_top.attr("checked", false);
     $nav.addClass("close_icon");
@@ -436,16 +436,22 @@
 
   // active link
   if (
-    $(".simplebar-wrapper .simplebar-content-wrapper") &&
+    $(".simplebar-wrapper .simplebar-content-wrapper").length &&
     $("#pageWrapper").hasClass("compact-wrapper")
-  ) {
-    $(".simplebar-wrapper .simplebar-content-wrapper").animate(
-      {
-        scrollTop:
-          $(".simplebar-wrapper .simplebar-content-wrapper a.active").offset()
-            .top - 400,
-      },
-      1000
-    );
-  }
+) {
+    var activeLink = $(".simplebar-wrapper .simplebar-content-wrapper a.active");
+
+    // Check if the active link exists
+    if (activeLink.length) {
+        $(".simplebar-wrapper .simplebar-content-wrapper").animate(
+            {
+                scrollTop: activeLink.offset().top - 400,
+            },
+            1000
+        );
+    } else {
+        console.warn("No active link found to scroll to.");
+    }
+}
+
 })($);

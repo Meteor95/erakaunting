@@ -1,4 +1,10 @@
 import './scrollbar/simplebar.js';
 import './scrollbar/custom.js';
+import './config.js'
+import './sidebar-menu.js';
+import './sidebar-pin.js';
+import './slick/slick.min.js';
+import './slick/slick.js';
+import './header-slick.js';
 import './script.js';
 import './theme-customizer/customizer.js';

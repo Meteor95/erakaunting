@@ -1,7 +1,4 @@
 @import url('https://cdn.erayadigital.co.id/font_awesome672/css/all.css');
-@import './style.css';
-@import './color-1.css';
-@import './responsive.css';
 @import './vendors/bootstrap.css';
 @import './vendors/icofont.css';
 @import './vendors/themify.css';
@@ -11,5 +8,6 @@
 @import './vendors/slick-theme.css';
 @import './vendors/scrollbar.css';
 @import './vendors/animate.css';
-@import './vendors/echart.css';
-@import './vendors/date-picker.css';
+@import './style.css';
+@import './color-1.css';
+@import './responsive.css';

@@ -44,4 +44,8 @@ export default defineConfig({
             '@images': '/resources/assets/images',
         },
     },
+    server: {
+        host: 'localhost',
+        port: 12102,
+    },
 });
